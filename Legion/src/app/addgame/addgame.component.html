@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Update User</h1>
+<form [formGroup]="addform" (ngSubmit)="AddGame()">
+    <div mat-dialog-content>
+        <mat-form-field class="example-full-width">
+            <mat-label>Game ID</mat-label>
+            <input formControlName="id" matInput placeholder="ID">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Game Name</mat-label>
+            <input formControlName="name" matInput placeholder="Name">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Category</mat-label>
+            <input formControlName="category" matInput placeholder="Category">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Game Link</mat-label>
+            <textarea formControlName="link" matInput placeholder="Link"></textarea>
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button type="submit" mat-raised-button color="primary" cdkFocusInitial>Save</button>
+        <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    </div>
+</form>

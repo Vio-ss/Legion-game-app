@@ -1,0 +1,381 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "admin",
+      "password": "Test$1234",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "id": "testuser",
+      "name": "Test User",
+      "password": "Test@1234",
+      "email": "test@in.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "karena",
+      "name": "Kiro Karena",
+      "password": "Test@1233",
+      "email": "te@in.com",
+      "gender": "female",
+      "role": "tech",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "tech",
+      "name": "Technician"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": " 1",
+      "name": " FarmVille3",
+      "category": "Managing",
+      "year": "2019",
+      "mode": "ofline",
+      "size": "1",
+      "link": " https://www.zynga.com/games/farmville-3/"
+    },
+    {
+      "id": " 2",
+      "name": " Empires and Puzzles",
+      "category": " Action",
+      "year": "2017",
+      "mode": "online",
+      "size": "1.5",
+      "link": " https://www.zynga.com/games/empires-and-puzzles/"
+    },
+    {
+      "id": "3",
+      "name": " Merge Dragons",
+      "category": "Action",
+      "year": "2013",
+      "mode": "ofline",
+      "size": "1",
+      "link": " https://www.zynga.com/games/merge-dragons/"
+    },
+    {
+      "id": " 4",
+      "name": " Toon Blast",
+      "category": "Adventure",
+      "year": "2012",
+      "mode": "ofline",
+      "size": "1",
+      "link": "https://www.zynga.com/games/toon-blast/"
+    },
+    {
+      "id": " 5",
+      "name": " CSR2",
+      "category": " Car Racing",
+      "year": "2020",
+      "mode": "online",
+      "size": "1",
+      "link": " https://www.zynga.com/games/csr-racing-2/"
+    },
+    {
+      "id": " 6",
+      "name": " ZyngaPoker",
+      "category": "Cards",
+      "year": "2017",
+      "mode": "ofline",
+      "size": "0.64",
+      "link": " https://zyngapoker.com/"
+    },
+    {
+      "id": " 7",
+      "name": "1010",
+      "category": "Puzzle",
+      "year": "2017",
+      "mode": "ofline",
+      "size": "1",
+      "link": " https://www.zynga.com/games/1010"
+    },
+    {
+      "id": "8",
+      "name": " Game of Thrones",
+      "category": "Cards",
+      "year": "2016",
+      "mode": "online",
+      "size": "1.25",
+      "link": " https://www.zynga.com/games/game-of-thrones-slots-casino/"
+    },
+    {
+      "id": " 9",
+      "name": " Words with friends",
+      "category": "Puzzle",
+      "year": "2013",
+      "mode": "online",
+      "size": "1",
+      "link": "https://www.zynga.com/games/words-with-friends-2/"
+    },
+    {
+      "id": " 10",
+      "name": " SugarTown",
+      "category": " Managing",
+      "year": "2017",
+      "mode": "ofline",
+      "size": "1.5",
+      "link": " https://www.zynga.com/games/sugartown/"
+    },
+    {
+      "id": " 11",
+      "name": " Wonka Candy",
+      "category": "Puzzle",
+      "year": "2016",
+      "mode": "ofline",
+      "size": "1",
+      "link": " https://www.zynga.com/games/wonkas-world-of-candy"
+    },
+    {
+      "id": " 12",
+      "name": " Azadi Quest",
+      "category": " Puzzle",
+      "year": "2014",
+      "mode": "online",
+      "size": "1",
+      "link": " https://www.zynga.com/games/azadi-quest-heroes-of-bharat/"
+    },
+    {
+      "id": "13",
+      "name": " Bid Whist",
+      "category": "Puzzle",
+      "year": "2011",
+      "mode": "ofline",
+      "size": "0.9",
+      "link": " https://www.zynga.com/games/bid-whist-plus/"
+    },
+    {
+      "id": " 14",
+      "name": " Chess",
+      "category": "Puzzle",
+      "year": "2012",
+      "mode": "ofline",
+      "size": "0.7",
+      "link": "https://www.zynga.com/games/chess-with-friends/"
+    },
+    {
+      "id": " 15",
+      "name": " CrossWord",
+      "category": "Puzzle",
+      "year": "2015",
+      "mode": "online",
+      "size": "0.7",
+      "link": " https://www.zynga.com/games/crosswords-with-friends/"
+    },
+    {
+      "id": " 16",
+      "name": " Solitaire",
+      "category": " Cards",
+      "year": "2015",
+      "mode": "online",
+      "size": "1",
+      "link": " https://www.zynga.com/games/freecell-solitaire/"
+    },
+    {
+      "id": "17",
+      "name": " Golf",
+      "category": "Sports",
+      "year": "2011",
+      "mode": "ofline",
+      "size": "1.25",
+      "link": " https://www.zynga.com/games/golf-rival/"
+    },
+    {
+      "id": " 18",
+      "name": " OkeyPlus",
+      "category": "Puzzle",
+      "year": "2018",
+      "mode": "online",
+      "size": "1.5",
+      "link": "https://www.zynga.com/games/okey-plus/"
+    },
+    {
+      "id": " 19",
+      "name": " TopTroops",
+      "category": " Action",
+      "year": "2014",
+      "mode": "ofline",
+      "size": "1",
+      "link": " https://www.zynga.com/games/top-troops/"
+    },
+    {
+      "id": " 20",
+      "name": " Skribbl",
+      "category": "Art",
+      "year": "2013",
+      "mode": "online",
+      "size": "1",
+      "link": " https://skribbl.io/"
+    },
+    {
+      "id": " 21",
+      "name": " Snipper",
+      "category": "Shooting",
+      "year": "2016",
+      "mode": "ofline",
+      "size": "1",
+      "link": " https://www.crazygames.com/game/sniper-mission-blj"
+    },
+    {
+      "id": " 22",
+      "name": "Among Us",
+      "category": " Action",
+      "year": "2014",
+      "mode": "online",
+      "size": "2",
+      "link": " https://www.sonsaur.com/among-us/"
+    },
+    {
+      "id": "23",
+      "name": " Snowcross",
+      "category": "Skating",
+      "year": "2013",
+      "mode": "ofline",
+      "size": "1.5",
+      "link": " https://www.sonsaur.com/snowcross-stunts-x3m/"
+    },
+    {
+      "id": " 24",
+      "name": " Penalty Shooters",
+      "category": "Sports",
+      "year": "2010",
+      "mode": "online",
+      "size": "1",
+      "link": "https://www.sonsaur.com/penalty-shooters/"
+    },
+    {
+      "id": " 25",
+      "name": " BB",
+      "category": "Sports",
+      "year": "2014",
+      "mode": "online",
+      "size": "1.5",
+      "link": " https://www.sonsaur.com/basketball-stars/"
+    }
+  ],
+  "savedgames": [
+    {
+      "id": " 2",
+      "name": " Empires and Puzzles",
+      "category": " Action",
+      "year": "2017",
+      "mode": "online",
+      "size": "1.5",
+      "link": " https://www.zynga.com/games/empires-and-puzzles/"
+    },
+    {
+      "id": "3",
+      "name": " Merge Dragons",
+      "category": "Action",
+      "year": "2013",
+      "mode": "ofline",
+      "size": "1",
+      "link": " https://www.zynga.com/games/merge-dragons/"
+    },
+    {
+      "id": " 5",
+      "name": " CSR2",
+      "category": " Car Racing",
+      "year": "2020",
+      "mode": "online",
+      "size": "1",
+      "link": " https://www.zynga.com/games/csr-racing-2/"
+    },
+    {
+      "id": " 1",
+      "name": " FarmVille3",
+      "category": "Managing",
+      "year": "2019",
+      "mode": "ofline",
+      "size": "1",
+      "link": " https://www.zynga.com/games/farmville-3/"
+    },
+    {
+      "id": " 4",
+      "name": " Toon Blast",
+      "category": "Adventure",
+      "year": "2012",
+      "mode": "ofline",
+      "size": "1",
+      "link": "https://www.zynga.com/games/toon-blast/"
+    },
+    {
+      "id": " 6",
+      "name": " ZyngaPoker",
+      "category": "Cards",
+      "year": "2017",
+      "mode": "ofline",
+      "size": "0.64",
+      "link": " https://zyngapoker.com/"
+    }
+  ],
+  "wishedgames": [
+    {
+      "id": " 2",
+      "name": " Empires and Puzzles",
+      "category": " Action",
+      "year": "2017",
+      "mode": "online",
+      "size": "1.5",
+      "link": " https://www.zynga.com/games/empires-and-puzzles/"
+    }
+  ]
+}

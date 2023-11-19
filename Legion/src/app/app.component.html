@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="app.component.css">
+</head>
+<!-- Toolbar -->
+<div class="toolbar" *ngIf="isMenuVisible" role="banner">
+  <br>
+  <a routerLink="">About</a>
+  <a *ngIf="isnotadmin" routerLink="/save">Saved Games</a>
+  <a routerLink="/customer">Games</a>
+  <a *ngIf="isadmin" routerLink="/user">Users</a>
+    <div class="spacer"></div>
+    
+    <a routerLink="/login">Logout</a>
+</div>
+
+<div class="content" style="width: 100%;display: block;" role="main">
+  <router-outlet></router-outlet>
+
+</div>
+

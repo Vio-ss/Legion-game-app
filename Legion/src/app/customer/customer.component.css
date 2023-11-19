@@ -1,0 +1,17 @@
+body {
+    background-color: #2A2D34;
+  }
+  mat-form-field{
+    color: aliceblue;
+  }
+  mat-label{
+    color: aliceblue;
+  }
+  a.link-color {
+    color: #007bff;
+  }
+ /* your-component.component.css */
+.search-input {
+  color: white !important;
+  /* Other styles */
+}

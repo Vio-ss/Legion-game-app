@@ -1,0 +1,78 @@
+
+<div class="container" *ngIf="data.length == 0">
+    <br><br>
+    <mat-card class="card_content" style="text-align: center;">
+        <mat-card-content>
+            No Games Bookmarked.
+        </mat-card-content>
+    </mat-card>
+    <br><br> 
+    <div style="text-align: center;">
+        <button routerLink="/save" mat-raised-button color="primary">Add from saved games!</button>
+    </div>
+</div>
+
+<ng-container *ngIf="data.length > 0" >
+<mat-form-field appearance="outline" color="accent">
+    <mat-label >Search Games</mat-label >
+    <input color="primary" matInput (keyup)="applyFilter($event)" placeholder="search" class="search-input">
+    <button mat-icon-button matSuffix>
+      <mat-icon>search</mat-icon>
+    </button>
+</mat-form-field>
+  
+  <mat-card>
+      <mat-card-header>
+          <h2>Bookmarked Games</h2>  
+      </mat-card-header>
+      <mat-card-content>
+          <div class="mat-elevation-z8">
+              <table mat-table matSort  [dataSource]="dataSource">
+            
+                <!-- Position Column -->
+                <ng-container matColumnDef="code">
+                  <th mat-header-cell *matHeaderCellDef> S.No </th>
+                  <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                </ng-container>
+            
+                <!-- Name Column -->
+                <ng-container  matColumnDef="name">
+                  <th mat-header-cell mat-sort-header *matHeaderCellDef> Game Name </th>
+                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+  
+                <!-- Category Column -->
+                <ng-container  matColumnDef="category">
+                  <th mat-header-cell mat-sort-header *matHeaderCellDef> Category </th>
+                  <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+                </ng-container>
+            
+                <!-- Weight Column -->
+                <ng-container matColumnDef="Link">
+                  <th mat-header-cell *matHeaderCellDef> Game Link </th>
+                  <td mat-cell *matCellDef="let element"> <a [href]="getSafeUrl(element.link)" target="_blank">Link</a> </td>
+                </ng-container>
+            
+                <ng-container matColumnDef="action">
+                  <th mat-header-cell *matHeaderCellDef> Action </th>
+                  <td mat-cell *matCellDef="let element">  
+                      <button (click)="removegame(element.id)" mat-raised-button color="warn">Delete</button>
+                  </td>
+                </ng-container>
+            
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
+            
+              <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                             showFirstLastButtons
+                             aria-label="Select page of periodic elements">
+              </mat-paginator>
+            </div>
+      </mat-card-content>
+    </mat-card>
+</ng-container>
+
+
+
+
